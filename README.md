@@ -133,7 +133,7 @@ Shows cities generating the highest revenue.
 ## Project Screenshots
 
 ### Executive Overview
-![Dashboard Page 1](dashboard_page1.)
+![Dashboard Page 1](https://github.com/ppoojitha76/sales-operation-dashboard-powerbi/blob/master/dashboard_page1.png.png?raw=true)
 
 ### Detailed Analysis
 ![Dashboard Page 2](dashboard_page2.png)
