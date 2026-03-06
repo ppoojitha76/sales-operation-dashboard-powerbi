@@ -1,159 +1,107 @@
 # Sales & Operations Performance Dashboard
 
 ## Project Overview
-This project presents an interactive **Sales and Operations Performance Dashboard** developed using Power BI. The objective of the dashboard is to analyze sales performance, customer purchasing behavior, and delivery efficiency using transactional e-commerce data.
 
-The dashboard transforms raw operational data into meaningful business insights, enabling stakeholders to monitor key performance indicators, evaluate product performance, and identify operational inefficiencies in delivery processes.
+This project presents an interactive Power BI dashboard built to analyze e commerce sales performance, customer purchasing behavior, and delivery efficiency. The dashboard converts raw transactional data into clear business insights that help monitor performance and identify operational improvement opportunities.
 
-The project demonstrates practical skills in **data modeling, data transformation, and business intelligence visualization**.
-
----
-
-## Business Objectives
-The main objectives of this analysis are:
-
-- Monitor overall revenue performance and order growth  
-- Identify top performing product categories contributing to revenue  
-- Understand customer payment behavior  
-- Analyze geographic distribution of orders  
-- Evaluate delivery performance across states  
-- Identify cities generating the highest revenue  
-
----
-
-## Tools and Technologies
-
-- Power BI  
-- SQL  
-- Python (for data preprocessing and transformation)  
-- DAX for calculated measures  
-- Data Modeling  
-
----
+The analysis focuses on understanding sales trends, regional distribution of revenue, customer patterns, and delivery performance.
 
 ## Dataset
 
-The analysis uses the **Brazilian E-commerce Public Dataset**, which contains transactional information related to customer orders, product categories, payment methods, order timestamps, and delivery information.
+The dataset used in this project is the Brazilian E Commerce Public Dataset (Olist). It contains information about customers, orders, products, and delivery operations.
 
-The dataset enables both **sales performance analysis and operational performance evaluation**.
+Main dataset used in this project:
 
----
+data/olist_customers_dataset.csv
 
-## Data Preparation
+## Project Workflow
 
-Before building the dashboard, the dataset was cleaned and transformed using Python and SQL.
+1. Data Collection  
+The Olist e commerce dataset was obtained and reviewed to understand the available tables and attributes related to customers, orders, and sales transactions.
 
-The preparation process included:
+2. Data Preparation  
+Data was cleaned and organized to remove inconsistencies and prepare it for analysis. Relevant fields were selected to support business analysis.
 
-- Handling missing values  
-- Creating calculated delivery duration metrics  
-- Standardizing date formats  
-- Aggregating revenue and order metrics  
-- Structuring the dataset for Power BI modeling  
+3. Data Modeling  
+Relationships between datasets such as customers, orders, and products were created to build a structured data model inside Power BI.
 
----
+4. Data Analysis  
+SQL queries were used to explore the data and extract meaningful metrics related to sales performance, customer behavior, and delivery operations.
 
-## Data Modeling
+5. Dashboard Development  
+Interactive visualizations were created in Power BI to monitor sales trends, regional distribution, and operational performance.
 
-A data model was created in Power BI to support time-based analysis.
+6. Insight Generation  
+The final dashboard was used to identify key patterns and insights that support business decision making.
 
-### Tables Used
+## Data Model
 
-**Public Final Dataset**  
-Contains transactional data such as revenue, customer location, payment type, and delivery duration.
+The data model connects customer, order, and product datasets to support analysis inside Power BI.
 
-**Date Table**  
-Created to enable time intelligence calculations such as monthly revenue trends.
+![Data Model]()
 
-### Relationship
+## Dashboard Preview
 
-Order Date in the main dataset is connected to the Date column in the Date Table.  
-This structure enables accurate time-based analysis using Power BI.
+### Sales Performance Overview
 
----
+![Dashboard Page 1](images/dashboard_page1.png)
 
-## Dashboard Structure
+### Regional Sales Distribution
 
-The dashboard consists of two main pages.
+![Dashboard Page 2](images/dashboard_page2.png)
 
-### Page 1 – Executive Overview
+## Key Insights
 
-This page provides a high-level summary of overall business performance.
+• A small number of regions contribute a large share of total revenue, showing strong regional concentration of sales.
 
-**Key KPIs**
+• Certain product categories dominate overall sales, indicating uneven category demand across the marketplace.
 
-- Total Revenue  
-- Total Orders  
-- Unique Orders  
-- Average Order Value  
-- Average Delivery Time  
+• Customer purchasing behavior shows repeat buyers, indicating opportunities for customer retention strategies.
 
-**Visualizations**
+• Delivery performance varies across regions, suggesting possible logistics inefficiencies.
 
-**Top 10 States by Orders**  
-Shows which states generate the highest number of orders.
+• Monitoring order trends over time helps identify seasonal sales patterns and growth opportunities.
 
-**Orders Distribution Map**  
-Displays geographic distribution of orders.
+## Tools Used
 
----
+Power BI  
+Used to design the interactive dashboard and create visualizations that highlight sales performance and operational metrics.
 
-### Page 2 – Detailed Performance Analysis
+PostgreSQL  
+Used to query the dataset and explore relationships between different tables.
 
-This page provides deeper analytical insights into sales and operational metrics.
+SQL  
+Used to perform joins, aggregations, filtering, and extract key business metrics from the dataset.
 
-**Visualizations include**
+Data Modeling  
+Relationships were created between datasets to support efficient analysis inside Power BI.
 
-**Monthly Revenue Trend**  
-Shows revenue growth over time.
+Data Visualization  
+Charts and interactive visuals were designed to present sales trends, regional distribution, and operational insights.
 
-**Top 10 Product Categories by Revenue**  
-Highlights the most profitable product categories.
+## Project Files
 
-**Orders by Payment Method**  
-Analyzes customer payment preferences.
+sales-operation-dashboard-powerbi
+│
+├── README.md
+├── sales_operations_dashboard.pbix
+├── sales_dashboard_queries.sql
+│
+├── data
+│   └── olist_customers_dataset.csv
+│
+└── images
+    ├── data_model.png
+    ├── dashboard_page1.png
+    └── dashboard_page2.png
 
-**Top 10 States with Longest Delivery Time**  
-Identifies states with potential delivery inefficiencies.
 
-**Top 10 Cities by Revenue**  
-Shows cities generating the highest revenue.
+## Author
 
----
+Poojitha  
+Data Analyst Enthusiast  
 
-## Key Business Insights
+## Project Repository
 
-- Revenue reached approximately **$16M with strong growth over time**  
-- **Credit cards dominate payment methods**, indicating customer preference for digital payments  
-- Certain states experience **longer delivery times**, indicating potential logistics challenges  
-- A small number of cities contribute a **large portion of total revenue**  
-
----
-
-## Project Screenshots
-
-### Executive Overview
-![Dashboard Page 1](https://github.com/ppoojitha76/sales-operation-dashboard-powerbi/blob/master/dashboard_page1.png.png?raw=true)
-
-### Detailed Analysis
-![Dashboard Page 2](https://github.com/ppoojitha76/sales-operation-dashboard-powerbi/blob/master/dashboard_page2.png.png?raw=true)
-
-### Data Model
-![Data Model](https://github.com/ppoojitha76/sales-operation-dashboard-powerbi/blob/master/Data_model.png.png?raw=true)
-
----
-
-## Skills Demonstrated
-
-- Data Cleaning and Transformation  
-- Data Modeling  
-- Power BI Dashboard Development  
-- DAX Calculations  
-- Business Insight Generation  
-- Data Visualization Best Practices  
-
----
-
-## Conclusion
-
-This project demonstrates how business intelligence tools can convert raw transactional data into actionable insights. The dashboard provides stakeholders with a clear understanding of sales performance, customer behavior, and operational efficiency, enabling better strategic decision-making.
+GitHub Repository:  
+https://github.com/ppoojitha76/sales-operation-dashboard-powerbi
