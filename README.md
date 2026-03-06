@@ -44,7 +44,7 @@ The data model connects customer, order, and product datasets to support analysi
 
 ### Sales Performance Overview
 
-![Dashboard Page 1](images/dashboard_page1.png)
+![Dashboard Page 1](https://github.com/ppoojitha76/sales-operation-dashboard-powerbi/blob/master/images/sales_performance_overview.png?raw=true)
 
 ### Regional Sales Distribution
 
