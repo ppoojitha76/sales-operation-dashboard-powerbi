@@ -38,7 +38,7 @@ The final dashboard was used to identify key patterns and insights that support 
 
 The data model connects customer, order, and product datasets to support analysis inside Power BI.
 
-![Data Model]()
+![Data Model](https://github.com/ppoojitha76/sales-operation-dashboard-powerbi/blob/master/images/Data_model.png?raw=true)
 
 ## Dashboard Preview
 
